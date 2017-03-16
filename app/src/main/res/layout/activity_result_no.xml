@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.usuario.candonate.activity_result_no">
+
+    <ImageView
+        android:id="@+id/chicos_sonrientes"
+        android:layout_width="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_height="170dp"
+        android:src="@drawable/chicos_sonrientes"
+        />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_marginTop="8dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/candonate_logo"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@id/chicos_sonrientes"/>
+
+    <View
+        android:id="@+id/linea"
+        android:layout_below="@id/chicos_sonrientes"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#80795548"/>
+
+    <TextView
+        android:id="@+id/text_sorry"
+        android:elevation="3dp"
+        android:layout_below="@id/chicos_sonrientes"
+        android:textColor="@color/brown_chocolate"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_sorry" />
+
+    <TextView
+        android:id="@+id/main_text_sorry"
+        android:layout_below="@id/text_sorry"
+        android:text="@string/main_text_sorry"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        style="@style/button"
+        android:onClick="send_results_mail"
+        android:layout_below="@id/main_text_sorry"
+        android:elevation="5dp"
+        android:id="@+id/button_send_results"
+        android:text="@string/send_results_mail"
+        android:background="@drawable/button"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_below="@id/button_send_results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal"
+        android:textStyle="italic"
+        android:textSize="12dp"
+        android:text="@string/note_below_results"/>
+
+
+</RelativeLayout>

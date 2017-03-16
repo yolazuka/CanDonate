@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#795548</color>
+    <color name="colorPrimaryDark">#795548</color>
+    <color name="colorAccent">#795548</color>
+    <color name="brown_chocolate">#795548</color>
+    <color name="red_corporative">#cc3333</color>
+    <color name="darker_brown_chocolate">#3E2723</color>
+    <color name="light_brown_chocolate">#D7CCC8</color>
+</resources>

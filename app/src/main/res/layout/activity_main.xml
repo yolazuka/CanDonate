@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.usuario.candonate.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imagen_chica"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:src="@drawable/chica_pensativa"
+        />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_marginTop="8dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/candonate_logo"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@id/imagen_chica"/>
+
+    <View
+        android:id="@+id/linea"
+        android:layout_below="@id/imagen_chica"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#80795548"/>
+
+
+    <ScrollView
+        android:id="@+id/main_scroll"
+        android:layout_below="@id/imagen_chica"
+        android:paddingTop="30dp"
+        android:paddingBottom="10dp"
+        android:layout_width="475dp"
+        android:layout_height="270dp">
+
+    <TextView
+        android:elevation="3dp"
+        android:id="@+id/texto_intro"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/imagen_chica"
+        android:text="@string/texto_intro" />
+    </ScrollView>
+
+
+    <Button
+        style="@style/button"
+        android:onClick="buttonToQuizz"
+        android:elevation="5dp"
+        android:id="@+id/button_go_test"
+        android:text="@string/button_go"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button"
+        android:layout_below="@id/main_scroll"
+        android:layout_marginTop="17dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_below="@id/button_go_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:textStyle="italic"
+        android:textSize="12dp"
+        android:text="@string/note_below"/>
+
+
+</RelativeLayout>

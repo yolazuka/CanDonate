@@ -20,7 +20,6 @@ public class activityresult_yes extends AppCompatActivity {
     }
 
 
-
     EditText userName = (EditText) findViewById(R.id.name);
     String user_Name = userName.getText().toString();
 

@@ -1,5 +1,6 @@
 package com.example.usuario.candonate;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,6 +11,8 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
+
+import static java.security.AccessController.getContext;
 
 public class Activity_Quizz extends AppCompatActivity {
 
@@ -22,9 +25,10 @@ public class Activity_Quizz extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity__quizz);
 
+        Button Check_results =(Button) findViewById(R.id.button_check_results);
+
+
     }
-
-
 
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
@@ -311,6 +315,7 @@ public class Activity_Quizz extends AppCompatActivity {
 
     public void Check_results(View view) {
 
+
         String mensajeTestnegativo = "You have declared " + totalScore + "incompatibilities with blood donation, sorry!";
         String mensajeTestpositivo = " Congratulations you dont have incompatibilities, you can donate!";
 
@@ -320,18 +325,19 @@ public class Activity_Quizz extends AppCompatActivity {
             Toast.makeText(this, mensajeTestnegativo, Toast.LENGTH_LONG).show();
             return;
 
-            //*** It takes you to the screen Activityresult_no */
-            Intent intent1 = new Intent(v.getContext(), activity_result_no.class);
-            startActivityForResult(intent1, 0);
+            //*** It takes you to the screen activity_result_no */
+
+            Intent GoToresultNo = new Intent(this, activity_result_no.class);
+            startActivity(GoToresultNo);
 
         } else {
 
             //*** Displays the test result on the toast */
             Toast.makeText(this, mensajeTestpositivo, Toast.LENGTH_LONG).show();
             return;
-            //*** It takes you to the screen Activityresult_yes */
-            Intent intent3 = new Intent(v.getContext(), activityresult_yes.class);
-            startActivityForResult(intent3, 0);
+            //*** It takes you to the screen activityresult_yes */
+            Intent GoToResultYes = new Intent(this, activityresult_yes.class);
+            startActivity(GoToResultYes);
 
 
         }

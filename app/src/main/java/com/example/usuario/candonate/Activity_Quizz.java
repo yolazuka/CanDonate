@@ -10,14 +10,21 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import static android.provider.AlarmClock.EXTRA_MESSAGE;
 import static java.security.AccessController.getContext;
 
 public class Activity_Quizz extends AppCompatActivity {
 
+    /**Variable used on the app */
+
     private static final String TOTAL_TEST_SCORE = "Total_Score";
     public static int totalScore = 0;
+    public EditText user_Age;
+    public EditText email_Address;
+    public EditText user_Name;
 
 
     @Override
@@ -25,7 +32,15 @@ public class Activity_Quizz extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity__quizz);
 
+        /**Reference to the layouts objects */
+
         Button Check_results =(Button) findViewById(R.id.button_check_results);
+        EditText userName = (EditText) findViewById(R.id.name);
+        String user_Name = userName.getText().toString();
+        EditText emailAddress = (EditText) findViewById(R.id.email_address);
+        String email_Address = emailAddress.getText().toString();
+        EditText userAge = (EditText) findViewById(R.id.age);
+        String user_Age = userAge.getText().toString();
 
 
     }
@@ -50,6 +65,7 @@ public class Activity_Quizz extends AppCompatActivity {
         totalScore = savedInstanceState.getInt(TOTAL_TEST_SCORE);
 
     }
+
 
     public void onClickQuestionOne(View view) {
         boolean checked = ((RadioButton) view).isChecked();
@@ -323,22 +339,31 @@ public class Activity_Quizz extends AppCompatActivity {
 
             //*** Displays the test result on the toast */
             Toast.makeText(this, mensajeTestnegativo, Toast.LENGTH_LONG).show();
-            return;
+
 
             //*** It takes you to the screen activity_result_no */
 
             Intent GoToresultNo = new Intent(this, activity_result_no.class);
+            Bundle bundle = new Bundle();
+            bundle.putString("Name", user_Name.getText().toString());
+            bundle.putString("Email", email_Address.getText().toString());
+            bundle.putInt("Age", 0);
             startActivity(GoToresultNo);
+
 
         } else {
 
             //*** Displays the test result on the toast */
             Toast.makeText(this, mensajeTestpositivo, Toast.LENGTH_LONG).show();
-            return;
-            //*** It takes you to the screen activityresult_yes */
-            Intent GoToResultYes = new Intent(this, activityresult_yes.class);
-            startActivity(GoToResultYes);
 
+            //*** It takes you to the screen activityresult_yes */
+
+            Intent GoToResultYes = new Intent(this, activityresult_yes.class);
+            Bundle bundle = new Bundle();
+            bundle.putString("Name", user_Name.getText().toString());
+            bundle.putString("Email", email_Address.getText().toString());
+            bundle.putInt("Age", 0);
+            startActivity(GoToResultYes);
 
         }
 

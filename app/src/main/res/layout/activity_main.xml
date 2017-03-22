@@ -10,6 +10,7 @@
     <ImageView
         android:id="@+id/imagen_chica"
         android:layout_width="match_parent"
+        android:background="@android:color/white"
         android:layout_height="170dp"
         android:src="@drawable/chica_pensativa"
         />

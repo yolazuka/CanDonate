@@ -16,6 +16,7 @@
 
     <ImageView
         android:id="@+id/imagen_chico"
+        android:background="@android:color/white"
         android:layout_width="match_parent"
         android:layout_height="170dp"
         android:src="@drawable/chico_pensativo_con_logo" />
@@ -459,46 +460,41 @@
             android:layout_height="wrap_content"
             android:text="@string/Q10"/>
 
-        <RadioGroup
-            android:id="@+id/r_g_question10"
-            android:orientation="vertical"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
 
-        <RadioButton
+        <CheckBox
             android:onClick="onClickQuestionTen"
-            style="@style/radiobutton"
+            style="@style/checkbox"
             android:id="@+id/ans1Q10"
             android:text="@string/ans1Q10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"/>
 
-        <RadioButton
+        <CheckBox
             android:onClick="onClickQuestionTen"
-            style="@style/radiobutton"
+            style="@style/checkbox"
             android:id="@+id/ans2Q10"
             android:text="@string/ans2Q10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-        <RadioButton
+        <CheckBox
             android:onClick="onClickQuestionTen"
-            style="@style/radiobutton"
+            style="@style/checkbox"
             android:id="@+id/ans3Q10"
             android:text="@string/ans3Q10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-        <RadioButton
+        <CheckBox
             android:onClick="onClickQuestionTen"
-            style="@style/radiobutton"
+            style="@style/checkbox"
             android:id="@+id/ans4Q10"
             android:text="@string/ans4Q10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-        <RadioButton
+        <CheckBox
             android:onClick="onClickQuestionTen"
             style="@style/radiobutton"
             android:id="@+id/ans5Q10"
@@ -506,9 +502,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="35dp"/>
-
-        </RadioGroup>
-
 
 
 

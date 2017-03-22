@@ -6,14 +6,14 @@ With just one donation three persons get healed.\nRemember that your donation is
     <string name="button_go">Check if you can Donate</string>
     <string name="note_below">(This test meets the Cruz Roja organization requirements and the official medical standars)</string>
     <string name="button_test_result">Check your results</string>
-    <string name="name">Name and surname</string>
+    <string name="name">Name and Surname</string>
     <string name="email_address">Email address ( for medical use only !)</string>
     <string name="Subject">Test result from CanIdonate org to </string>
     <string name="age">Age</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="email_header">Donate blood test for .</string>
-    <string name="amount_incompatibilities">Incompatibilities for ilnesses, tatooes, or piercings: </string>
+    <string name="amount_incompatibilities">Incompatibilities from ilness, pregnancy, tatoos, or piercings: </string>
     <string name="Thank_you">Thanks a lot for your trust and time, remember to check your incompatibilities with Blood donation every 2 or 3 months! </string>
     <string name="Q1">1.- Do you have or have you had any serious cardiovascular disease?</string>
     <string name="Q2">2.- Have you lived in Uk for at least 1 year during the years 1980 - 1996 ?</string>

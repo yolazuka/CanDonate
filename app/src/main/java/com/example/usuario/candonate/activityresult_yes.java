@@ -22,22 +22,18 @@ public class activityresult_yes extends AppCompatActivity {
 
     public void send_results_mail (View view) {
 
-        /* Create an intent in order to get the parameters from the Activity_Quizz.java
-         */
-
-        Intent GoToResultYes = getIntent();
-        Bundle bundle = GoToResultYes.getExtras();
-
         /***Create the strings for the test details that will go into the email  */
 
-        String resumenDeTest = getString(R.string.email_header) + "Age: " + bundle.getInt("Age") + "\n" + getString(R.string.amount_incompatibilities) + Activity_Quizz.totalScore + "\n" + getString(R.string.Thank_you);
+        String resumenDeTest = getString(R.string.email_header) + " " + getIntent().getExtras().getString("Name") + "\n" + getString(R.string.age) + " " + getIntent().getExtras().getString("Age") +"\n" + getString(R.string.amount_incompatibilities) + " " + Activity_Quizz.totalScore + "\n" + getString(R.string.Thank_you);
 
-        /***Create the intent for the email including all the parameters  */
+        /***Create the email including all the parameters  */
 
         Intent SendToEmail = new Intent(Intent.ACTION_SENDTO);
-        SendToEmail.setData(Uri.parse("mailto:" + bundle.getString("Email"))); // only email apps should handle this*
-        SendToEmail.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.Subject) + bundle.getString("Nombre"));
+        SendToEmail.setData(Uri.parse("mailto:" + getIntent().getExtras().getString("Email"))); // only email apps should handle this*
+        SendToEmail.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.Subject) + " " + getIntent().getExtras().get("Name"));
         SendToEmail.putExtra(Intent.EXTRA_TEXT, resumenDeTest);
+
+
 
         /* We write the line below to avoid the Crash just in case the app can not find a proper
         external app*/
@@ -60,6 +56,14 @@ public class activityresult_yes extends AppCompatActivity {
         if (goToMap.resolveActivity(getPackageManager()) != null) {
             startActivity(goToMap);
         }
+    }
+
+    public void buttonToBackToQuizz (View view) {
+
+        Activity_Quizz.totalScore = 0;
+        Intent goToQuizz = new Intent(this, Activity_Quizz.class);
+        startActivity(goToQuizz);
+
     }
 
 }

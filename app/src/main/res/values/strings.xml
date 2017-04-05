@@ -4,20 +4,21 @@
 <b>Why should we donate blood?</b> \n \nThe main reason is that blood can not be produced. It only can be obteined by donors like you.\nOn the other hand, blood is essential in surgeries and emergencies. Also blood expires, and can not be stored indefinitely. \nSo please do not forget….
 With just one donation three persons get healed.\nRemember that your donation is necessary throughout the year. So try to donate before the holiday periods. In these periods donations decrease drastically, while the needs are the same all along the year.\n \n<b>If you want to know if you are elegible to donate, please go through this easy and quick test.</b></string>
     <string name="button_go">Check if you can Donate</string>
-    <string name="note_below">(This test meets the Cruz Roja organization requirements and the official medical standars)</string>
+    <string name="note_below">(This test meets the Cruz Roja organization\n requirements and the official medical standars)</string>
     <string name="button_test_result">Check your results</string>
     <string name="name">Name and Surname</string>
     <string name="email_address">Email address ( for medical use only !)</string>
-    <string name="Subject">Test result from CanIdonate org to </string>
-    <string name="age">Age</string>
+    <string name="Subject">Test result from CanIdonate Org to: </string>
+    <string name="age">Age:</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
-    <string name="email_header">Donate blood test for .</string>
-    <string name="amount_incompatibilities">Incompatibilities from ilness, pregnancy, tatoos, or piercings: </string>
-    <string name="Thank_you">Thanks a lot for your trust and time, remember to check your incompatibilities with Blood donation every 2 or 3 months! </string>
+    <string name="email_header"><b>Donate blood test for:</b> </string>
+    <string name="repeat_test">Repeat\nthe Test </string>
+    <string name="amount_incompatibilities">Incompatibilities from illness, pregnancy, tattoos, or piercings: </string>
+    <string name="Thank_you">\n\nThanks a lot for your trust and time, \n\nRemember to check your incompatibilities with Blood donation every 2 or 3 months!\n\n CanIdonate.org </string>
     <string name="Q1">1.- Do you have or have you had any serious cardiovascular disease?</string>
     <string name="Q2">2.- Have you lived in Uk for at least 1 year during the years 1980 - 1996 ?</string>
-    <string name="Q3">3.- Have you had any of the listed below deseases?If so, click the appropiate ones. If you havent, please leave it blank:</string>
+    <string name="Q3">3.- Have you had any of the listed below deseases?If so,click the ones</string>
     <string name="ans1Q3">Central nervous system deseases</string>
     <string name="ans2Q3">Repeated situations of syncopes</string>
     <string name="ans3Q3">Diabetes treated with insuline</string>
@@ -29,6 +30,7 @@ With just one donation three persons get healed.\nRemember that your donation is
     <string name="ans9Q3">Cancer</string>
     <string name="ans10Q3">Leismanosis visceral</string>
     <string name="ans11Q3">Coagulation pathologies</string>
+    <string name="ans12Q3">I have not had any of those</string>
     <string name="Q4">4.- Have you ever consumed intravenous drugs?</string>
     <string name="Q5">5.- Have you got a tattoo or piercing in the last 6 months?</string>
     <string name="Q6">6.- Have you been vaccinated in the last 4 months?</string>
@@ -47,5 +49,6 @@ With just one donation three persons get healed.\nRemember that your donation is
     <string name="send_results_mail">Send my results\nby email</string>
     <string name="main_text_congrat">You are elegible to donate blood.\nThat is fantastic news, as you can save lifes now!\nYour community will be very pleased with your great decision.\nLet\'s go ahead to the following step, by finding your nearest donation center. So click the below button for an easy search.\nPlease do not forget to send your test results to your email. Show it up to your donation center in order to correctly apply to the donation.</string>
     <string name="text_sorry">We are sorry you can not donate blood at the moment</string>
+    <string name="text_not_all_checked">You haven\'t replied all the questions.\nPlease Review your answers</string>
     <string name="main_text_sorry">You are not elegible at the moment to donate blood.\nThis is because you confirmed you had some of the illnesses that are not compatible with blood donation.\nHowever, you can always repeat the test in 2 months time. The results may be different then. We still recommend you to send your results by email through the below button.\nThanks for your interest and good luck with the next test!</string>
 </resources>

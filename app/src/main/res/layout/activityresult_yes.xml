@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.usuario.candonate.activityresult_yes">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/chicos_sonrientes"
@@ -62,13 +67,13 @@
         style="@style/button"
         android:onClick="buttonToFindCenters"
         android:elevation="5dp"
-        android:layout_marginLeft="45dp"
+        android:layout_marginLeft="30dp"
         android:text="@string/button_to_find_centers"
         android:layout_width="140dp"
         android:layout_height="50dp"
         android:background="@drawable/button"
         android:layout_below="@id/main_text_congrat"
-        android:layout_marginTop="40dp" />
+        android:layout_marginTop="30dp" />
 
     <TextView
         android:id="@+id/testresume"
@@ -79,27 +84,38 @@
         style="@style/button"
         android:onClick="send_results_mail"
         android:layout_below="@id/main_text_congrat"
-        android:layout_toRightOf="@id/button_to_find_centers"
+        android:layout_alignParentRight="true"
         android:elevation="5dp"
         android:id="@+id/button_send_results"
         android:text="@string/send_results_mail"
         android:background="@drawable/button"
+        android:layout_marginRight="30dp"
         android:layout_width="140dp"
         android:layout_height="50dp"
-        android:layout_marginTop="40dp"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:layout_below="@id/button_send_results"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="33dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="12dp"
-        android:gravity="center_horizontal"
-        android:textStyle="italic"
-        android:textSize="12dp"
-        android:text="@string/note_below_results"/>
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="80dp"/>
 
 
-</RelativeLayout>
+
+
+
+        <Button
+            android:text="@string/repeat_test"
+            android:onClick="buttonToBackToQuizz"
+            android:textSize="12sp"
+            style="@style/button"
+            android:layout_toLeftOf="@id/button_check_results"
+            android:paddingTop="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="0dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/button_gota"
+            android:id="@+id/button_back_to_quizz"
+            android:layout_height="50dp"
+            android:layout_width="55dp" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

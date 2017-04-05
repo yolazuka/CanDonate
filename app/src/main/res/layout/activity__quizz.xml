@@ -5,13 +5,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginBottom="0dp"
     android:background="@android:color/white"
     tools:context="com.example.usuario.candonate.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical"
+        android:weightSum="1">
 
 
     <ImageView
@@ -34,9 +37,9 @@
      <EditText
 
          android:id="@+id/name"
-         android:backgroundTint="@color/light_brown_chocolate"
+         android:backgroundTint="@color/red_corporative"
          android:layout_marginLeft="30dp"
-         android:layout_marginRight="30dp"
+         android:layout_marginRight="20dp"
          android:layout_marginTop="10dp"
          android:textSize="14sp"
          android:layout_width="match_parent"
@@ -51,25 +54,25 @@
      <EditText
 
          android:id="@+id/email_address"
-         android:backgroundTint="@color/light_brown_chocolate"
+         android:backgroundTint="@color/red_corporative"
          android:textColor="@color/darker_brown_chocolate"
+         android:textAllCaps="false"
          android:layout_marginLeft="30dp"
-         android:layout_marginRight="30dp"
+         android:layout_marginRight="20dp"
          android:textSize="14sp"
          android:layout_width="match_parent"
          android:layout_height="wrap_content"
          android:layout_marginBottom="1dp"
-         android:hint="@string/email_address"
-         android:inputType="textCapWords" />
+         android:hint="@string/email_address" />
 
         <EditText
 
          android:id="@+id/age"
-         android:backgroundTint="@color/light_brown_chocolate"
+         android:backgroundTint="@color/red_corporative"
          android:textColor="@color/darker_brown_chocolate"
          android:layout_below="@id/age"
          android:layout_marginLeft="30dp"
-         android:layout_marginRight="30dp"
+         android:layout_marginRight="20dp"
          android:textSize="14sp"
          android:layout_width="match_parent"
          android:layout_height="wrap_content"
@@ -81,9 +84,14 @@
 
      <TextView
          style="@style/questions"
+         android:background="@drawable/frame"
+         android:paddingBottom="8dp"
+         android:paddingTop="8dp"
+         android:paddingLeft="8dp"
          android:id="@+id/Q1"
-         android:layout_width="wrap_content"
+         android:layout_width="match_parent"
          android:layout_height="wrap_content"
+         android:layout_marginLeft="30dp"
          android:text="@string/Q1"/>
 
 
@@ -116,8 +124,13 @@
 
         <TextView
             style="@style/questions"
+            android:background="@drawable/frame"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:layout_marginLeft="30dp"
             android:id="@+id/Q2"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/Q2"/>
 
@@ -150,9 +163,14 @@
 
         <TextView
             style="@style/questions"
+            android:background="@drawable/frame"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:layout_marginLeft="30dp"
             android:id="@+id/Q3"
             android:layout_marginBottom="5dp"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/Q3"/>
 
@@ -245,12 +263,26 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"/>
 
+        <CheckBox
+            android:onClick="onClickQuestionThree"
+            style="@style/checkbox"
+            android:id="@+id/ans12Q3"
+            android:text="@string/ans12Q3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"/>
+
         <!-- QUESTION 4 -->
 
         <TextView
             style="@style/questions"
+            android:background="@drawable/frame"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:layout_marginLeft="30dp"
             android:id="@+id/Q4"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/Q4"/>
 
@@ -284,8 +316,13 @@
 
         <TextView
             style="@style/questions"
+            android:background="@drawable/frame"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:layout_marginLeft="30dp"
             android:id="@+id/Q5"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/Q5"/>
 
@@ -319,8 +356,13 @@
 
         <TextView
             style="@style/questions"
+            android:background="@drawable/frame"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:layout_marginLeft="30dp"
             android:id="@+id/Q6"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/Q6"/>
 
@@ -352,8 +394,13 @@
 
         <TextView
             style="@style/questions"
+            android:background="@drawable/frame"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:layout_marginLeft="30dp"
             android:id="@+id/Q7"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/Q7"/>
 
@@ -387,8 +434,13 @@
 
         <TextView
             style="@style/questions"
+            android:background="@drawable/frame"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:layout_marginLeft="30dp"
             android:id="@+id/Q8"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/Q8"/>
 
@@ -421,8 +473,13 @@
 
         <TextView
             style="@style/questions"
+            android:background="@drawable/frame"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:layout_marginLeft="30dp"
             android:id="@+id/Q9"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/Q9"/>
 
@@ -455,8 +512,13 @@
 
         <TextView
             style="@style/questions"
+            android:background="@drawable/frame"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:layout_marginLeft="30dp"
             android:id="@+id/Q10"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/Q10"/>
 
@@ -503,6 +565,12 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="35dp"/>
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="0">
+
 
 
         <!-- BUTTON TO CHECK THE TEST -->
@@ -515,8 +583,21 @@
         android:text="@string/button_test_result"
         android:layout_width="180dp"
         android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/button"
-        android:layout_gravity="center_horizontal" />
+        android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/note_below"
+            android:layout_below="@+id/button_check_results"
+            android:text="@string/note_below"
+            android:textSize="10sp"
+            android:textStyle="italic"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginBottom="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
         <!-- BUTTON TO COME BACK  HOME -->
 
@@ -524,13 +605,19 @@
         android:text="Back"
         android:onClick="buttonToBackToMain"
         android:textSize="12sp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="6dp"
-        android:background="@android:color/white"
+        style="@style/button"
+        android:layout_toLeftOf="@+id/button_check_results"
+        android:paddingRight="4dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="13dp"
+        android:layout_marginLeft="0dp"
+        android:background="@drawable/button_gota"
         android:id="@+id/button_back"
-        android:layout_width="50dp"
-        android:layout_height="30dp" />
+        android:layout_width="70dp"
+        android:layout_height="40dp" />
 
 
+        </RelativeLayout>
     </LinearLayout>
 </ScrollView>

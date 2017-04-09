@@ -45,9 +45,9 @@
     <TextView
         android:elevation="3dp"
         android:id="@+id/texto_intro"
-        android:layout_marginTop="0dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginTop="@dimen/margin_standard_top"
+        android:layout_marginLeft="@dimen/margin_standard_left"
+        android:layout_marginRight="@dimen/margin_standard_right"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_below="@id/imagen_chica"
@@ -65,7 +65,7 @@
         android:layout_height="50dp"
         android:background="@drawable/button"
         android:layout_below="@id/main_scroll"
-        android:layout_marginTop="17dp"
+        android:layout_marginTop="@dimen/medium"
         android:layout_centerHorizontal="true" />
 
     <TextView
@@ -73,9 +73,9 @@
         android:layout_below="@id/button_go_test"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginLeft="@dimen/margin_standard_left"
+        android:layout_marginRight="@dimen/margin_standard_right"
+        android:layout_marginTop="@dimen/medium"
         android:layout_marginBottom="0dp"
         android:gravity="center_horizontal"
         android:layout_centerHorizontal="true"

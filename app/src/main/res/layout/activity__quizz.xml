@@ -12,7 +12,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="0dp"
+        android:layout_marginBottom="@dimen/margin_standard_top"
         android:orientation="vertical"
         android:weightSum="1">
 
@@ -29,7 +29,7 @@
         android:id="@+id/linea"
         android:layout_width="fill_parent"
         android:layout_height="1dp"
-        android:background="#80795548"/>
+        android:background="@color/medium_brown"/>
 
 
         <!-- PERSONAL USER,S INFO -->
@@ -38,8 +38,8 @@
 
          android:id="@+id/name"
          android:backgroundTint="@color/red_corporative"
-         android:layout_marginLeft="30dp"
-         android:layout_marginRight="20dp"
+         android:layout_marginLeft="@dimen/margin_quiz_left"
+         android:layout_marginRight="@dimen/margin_quiz_right"
          android:layout_marginTop="10dp"
          android:textSize="14sp"
          android:layout_width="match_parent"
@@ -57,8 +57,8 @@
          android:backgroundTint="@color/red_corporative"
          android:textColor="@color/darker_brown_chocolate"
          android:textAllCaps="false"
-         android:layout_marginLeft="30dp"
-         android:layout_marginRight="20dp"
+         android:layout_marginLeft="@dimen/margin_quiz_left"
+         android:layout_marginRight="@dimen/margin_quiz_right"
          android:textSize="14sp"
          android:layout_width="match_parent"
          android:layout_height="wrap_content"
@@ -71,12 +71,12 @@
          android:backgroundTint="@color/red_corporative"
          android:textColor="@color/darker_brown_chocolate"
          android:layout_below="@id/age"
-         android:layout_marginLeft="30dp"
-         android:layout_marginRight="20dp"
+         android:layout_marginLeft="@dimen/margin_quiz_left"
+         android:layout_marginRight="@dimen/margin_quiz_right"
          android:textSize="14sp"
          android:layout_width="match_parent"
          android:layout_height="wrap_content"
-         android:layout_marginBottom="16dp"
+         android:layout_marginBottom="@dimen/medium"
          android:hint="@string/age"
          android:inputType="textCapWords" />
 
@@ -85,13 +85,9 @@
      <TextView
          style="@style/questions"
          android:background="@drawable/frame"
-         android:paddingBottom="8dp"
-         android:paddingTop="8dp"
-         android:paddingLeft="8dp"
          android:id="@+id/Q1"
          android:layout_width="match_parent"
          android:layout_height="wrap_content"
-         android:layout_marginLeft="30dp"
          android:text="@string/Q1"/>
 
 
@@ -125,10 +121,6 @@
         <TextView
             style="@style/questions"
             android:background="@drawable/frame"
-            android:paddingBottom="8dp"
-            android:paddingTop="8dp"
-            android:paddingLeft="8dp"
-            android:layout_marginLeft="30dp"
             android:id="@+id/Q2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -164,10 +156,6 @@
         <TextView
             style="@style/questions"
             android:background="@drawable/frame"
-            android:paddingBottom="8dp"
-            android:paddingTop="8dp"
-            android:paddingLeft="8dp"
-            android:layout_marginLeft="30dp"
             android:id="@+id/Q3"
             android:layout_marginBottom="5dp"
             android:layout_width="match_parent"
@@ -277,10 +265,6 @@
         <TextView
             style="@style/questions"
             android:background="@drawable/frame"
-            android:paddingBottom="8dp"
-            android:paddingTop="8dp"
-            android:paddingLeft="8dp"
-            android:layout_marginLeft="30dp"
             android:id="@+id/Q4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -317,10 +301,6 @@
         <TextView
             style="@style/questions"
             android:background="@drawable/frame"
-            android:paddingBottom="8dp"
-            android:paddingTop="8dp"
-            android:paddingLeft="8dp"
-            android:layout_marginLeft="30dp"
             android:id="@+id/Q5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -357,10 +337,6 @@
         <TextView
             style="@style/questions"
             android:background="@drawable/frame"
-            android:paddingBottom="8dp"
-            android:paddingTop="8dp"
-            android:paddingLeft="8dp"
-            android:layout_marginLeft="30dp"
             android:id="@+id/Q6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -395,10 +371,6 @@
         <TextView
             style="@style/questions"
             android:background="@drawable/frame"
-            android:paddingBottom="8dp"
-            android:paddingTop="8dp"
-            android:paddingLeft="8dp"
-            android:layout_marginLeft="30dp"
             android:id="@+id/Q7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -435,10 +407,6 @@
         <TextView
             style="@style/questions"
             android:background="@drawable/frame"
-            android:paddingBottom="8dp"
-            android:paddingTop="8dp"
-            android:paddingLeft="8dp"
-            android:layout_marginLeft="30dp"
             android:id="@+id/Q8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -474,10 +442,6 @@
         <TextView
             style="@style/questions"
             android:background="@drawable/frame"
-            android:paddingBottom="8dp"
-            android:paddingTop="8dp"
-            android:paddingLeft="8dp"
-            android:layout_marginLeft="30dp"
             android:id="@+id/Q9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -513,10 +477,6 @@
         <TextView
             style="@style/questions"
             android:background="@drawable/frame"
-            android:paddingBottom="8dp"
-            android:paddingTop="8dp"
-            android:paddingLeft="8dp"
-            android:layout_marginLeft="30dp"
             android:id="@+id/Q10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -610,7 +570,7 @@
         android:paddingRight="4dp"
         android:layout_marginTop="0dp"
         android:layout_marginRight="35dp"
-        android:layout_marginBottom="13dp"
+        android:layout_marginBottom="@dimen/medium"
         android:layout_marginLeft="0dp"
         android:background="@drawable/button_gota"
         android:id="@+id/button_back"

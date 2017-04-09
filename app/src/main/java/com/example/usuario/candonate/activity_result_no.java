@@ -40,6 +40,8 @@ public class activity_result_no extends AppCompatActivity {
         }
     }
 
+    /**Button to go the quiz app and repet the test. Reset the totalScore to zero **/
+
     public void buttonToBackToQuizz (View view) {
 
         Activity_Quizz.totalScore = 0;

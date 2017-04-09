@@ -109,10 +109,6 @@ public class Activity_Quizz extends AppCompatActivity {
                 if (checked) {
                     totalScore = totalScore + 1;
 
-                } else {
-
-                    totalScore = totalScore + 0;
-
                 }
 
                 break;
@@ -120,9 +116,6 @@ public class Activity_Quizz extends AppCompatActivity {
             case R.id.ans2Q3:
                 if (checked) {
                     totalScore = totalScore + 1;
-                } else {
-
-                    totalScore = totalScore + 0;
 
                 }
 
@@ -132,9 +125,6 @@ public class Activity_Quizz extends AppCompatActivity {
             case R.id.ans3Q3:
                 if (checked) {
                     totalScore = totalScore + 1;
-                } else {
-
-                    totalScore = totalScore + 0;
 
                 }
 
@@ -144,9 +134,6 @@ public class Activity_Quizz extends AppCompatActivity {
             case R.id.ans4Q3:
                 if (checked) {
                     totalScore = totalScore + 1;
-                } else {
-
-                    totalScore = totalScore + 0;
 
                 }
 
@@ -156,9 +143,6 @@ public class Activity_Quizz extends AppCompatActivity {
             case R.id.ans5Q3:
                 if (checked) {
                     totalScore = totalScore + 1;
-                } else {
-
-                    totalScore = totalScore + 0;
 
                 }
 
@@ -168,9 +152,6 @@ public class Activity_Quizz extends AppCompatActivity {
             case R.id.ans6Q3:
                 if (checked) {
                     totalScore = totalScore + 1;
-                } else {
-
-                    totalScore = totalScore + 0;
 
                 }
 
@@ -180,9 +161,7 @@ public class Activity_Quizz extends AppCompatActivity {
             case R.id.ans7Q3:
                 if (checked) {
                     totalScore = totalScore + 1;
-                } else {
 
-                    totalScore = totalScore + 0;
                 }
 
                 break;
@@ -191,9 +170,7 @@ public class Activity_Quizz extends AppCompatActivity {
             case R.id.ans8Q3:
                 if (checked) {
                     totalScore = totalScore + 1;
-                } else {
 
-                    totalScore = totalScore + 0;
 
                 }
 
@@ -203,9 +180,6 @@ public class Activity_Quizz extends AppCompatActivity {
             case R.id.ans9Q3:
                 if (checked) {
                     totalScore = totalScore + 1;
-                } else {
-
-                    totalScore = totalScore + 0;
 
                     break;
                 }
@@ -213,9 +187,6 @@ public class Activity_Quizz extends AppCompatActivity {
             case R.id.ans10Q3:
                 if (checked) {
                     totalScore = totalScore + 1;
-                } else {
-
-                    totalScore = totalScore + 0;
 
                 }
 
@@ -225,9 +196,6 @@ public class Activity_Quizz extends AppCompatActivity {
             case R.id.ans11Q3:
                 if (checked) {
                     totalScore = totalScore + 1;
-                } else {
-
-                    totalScore = totalScore + 0;
 
                 }
 
@@ -236,9 +204,6 @@ public class Activity_Quizz extends AppCompatActivity {
 
             case R.id.ans12Q3:
                 if (checked) {
-                    totalScore = totalScore + 0;
-                } else {
-
                     totalScore = totalScore + 0;
 
                 }
@@ -351,20 +316,6 @@ public class Activity_Quizz extends AppCompatActivity {
             case R.id.ans1Q10:
                 if (checked) {
                     totalScore = totalScore + 1;
-                } else {
-
-                    totalScore = totalScore + 0;
-
-                }
-
-                break;
-
-            case R.id.ans2Q10:
-                if (checked) {
-                    totalScore = totalScore + 0;
-                } else {
-
-                    totalScore = totalScore + 0;
 
                 }
 
@@ -374,33 +325,6 @@ public class Activity_Quizz extends AppCompatActivity {
             case R.id.ans3Q10:
                 if (checked) {
                     totalScore = totalScore + 1;
-                } else {
-
-                    totalScore = totalScore + 0;
-
-                }
-
-                break;
-
-
-            case R.id.ans4Q10:
-                if (checked) {
-                    totalScore = totalScore + 0;
-                } else {
-
-                    totalScore = totalScore + 0;
-
-                }
-
-                break;
-
-
-            case R.id.ans5Q10:
-                if (checked) {
-                    totalScore = totalScore + 0;
-                } else {
-
-                    totalScore = totalScore + 0;
 
                 }
 
@@ -476,7 +400,7 @@ public class Activity_Quizz extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent2 = new Intent(v.getContext(), MainActivity.class);
-                startActivityForResult(intent2, 0);
+                startActivity(intent2);
             }
         });
 
@@ -485,6 +409,8 @@ public class Activity_Quizz extends AppCompatActivity {
 
 
     public class Test{
+
+        //** Check if all the questions have been replied **//
         private boolean pregunta1, pregunta2, pregunta3, pregunta4, pregunta5, pregunta6, pregunta7, pregunta8, pregunta9, pregunta10;
 
         public Test(){

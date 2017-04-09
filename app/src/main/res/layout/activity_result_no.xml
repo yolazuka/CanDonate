@@ -44,8 +44,8 @@
         android:textSize="18sp"
         android:gravity="center_horizontal"
         android:layout_marginTop="25dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginLeft="@dimen/margin_standard_left"
+        android:layout_marginRight="@dimen/margin_standard_right"
         android:layout_marginBottom="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -55,8 +55,8 @@
         android:id="@+id/main_text_sorry"
         android:layout_below="@id/text_sorry"
         android:text="@string/main_text_sorry"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginLeft="@dimen/margin_standard_left"
+        android:layout_marginRight="@dimen/margin_standard_right"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 

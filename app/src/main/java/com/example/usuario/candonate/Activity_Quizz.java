@@ -1,24 +1,14 @@
 package com.example.usuario.candonate;
 
-import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
-import android.widget.TextView;
 import android.widget.Toast;
-import junit.framework.Test;
-
-
-import static android.provider.AlarmClock.EXTRA_MESSAGE;
-import static com.example.usuario.candonate.R.id.age;
-import static com.example.usuario.candonate.R.id.r_g_question1;
-import static java.security.AccessController.getContext;
 
 public class Activity_Quizz extends AppCompatActivity {
 
@@ -29,7 +19,6 @@ public class Activity_Quizz extends AppCompatActivity {
     private static final String TOTAL_TEST_SCORE = "Total_Score";
     public static int totalScore = 0;
     Test test;
-
 
 
     @Override
@@ -64,7 +53,6 @@ public class Activity_Quizz extends AppCompatActivity {
         totalScore = savedInstanceState.getInt(TOTAL_TEST_SCORE);
 
     }
-
 
     public void onClickQuestionOne(View view) {
         boolean checked = ((RadioButton) view).isChecked();
@@ -121,7 +109,6 @@ public class Activity_Quizz extends AppCompatActivity {
 
                 break;
 
-
             case R.id.ans3Q3:
                 if (checked) {
                     totalScore = totalScore + 1;
@@ -129,7 +116,6 @@ public class Activity_Quizz extends AppCompatActivity {
                 }
 
                 break;
-
 
             case R.id.ans4Q3:
                 if (checked) {
@@ -139,7 +125,6 @@ public class Activity_Quizz extends AppCompatActivity {
 
                 break;
 
-
             case R.id.ans5Q3:
                 if (checked) {
                     totalScore = totalScore + 1;
@@ -147,7 +132,6 @@ public class Activity_Quizz extends AppCompatActivity {
                 }
 
                 break;
-
 
             case R.id.ans6Q3:
                 if (checked) {
@@ -157,7 +141,6 @@ public class Activity_Quizz extends AppCompatActivity {
 
                 break;
 
-
             case R.id.ans7Q3:
                 if (checked) {
                     totalScore = totalScore + 1;
@@ -165,7 +148,6 @@ public class Activity_Quizz extends AppCompatActivity {
                 }
 
                 break;
-
 
             case R.id.ans8Q3:
                 if (checked) {
@@ -175,7 +157,6 @@ public class Activity_Quizz extends AppCompatActivity {
                 }
 
                 break;
-
 
             case R.id.ans9Q3:
                 if (checked) {
@@ -192,7 +173,6 @@ public class Activity_Quizz extends AppCompatActivity {
 
                 break;
 
-
             case R.id.ans11Q3:
                 if (checked) {
                     totalScore = totalScore + 1;
@@ -200,7 +180,6 @@ public class Activity_Quizz extends AppCompatActivity {
                 }
 
                 break;
-
 
             case R.id.ans12Q3:
                 if (checked) {
@@ -334,13 +313,11 @@ public class Activity_Quizz extends AppCompatActivity {
         test.setPregunta10(true);
     }
 
-
     /*** This method is called when the button "CHECK THE RESULTS" is clicked **/
 
     public void Check_results(View view) {
 
         if (test.todasContestadas()) {
-
 
             String mensajeTestnegativo = "You have declared " + totalScore + "incompatibilities with blood donation, sorry!";
             String mensajeTestpositivo = " Congratulations you dont have incompatibilities, you can donate!";
@@ -351,9 +328,7 @@ public class Activity_Quizz extends AppCompatActivity {
             EditText emailAddress = (EditText) findViewById(R.id.email_address);
             EditText userAge = (EditText) findViewById(R.id.age);
 
-
             if (totalScore >= 1) {
-
 
                 //*** Displays the test result on the toast */
                 Toast.makeText(this, mensajeTestnegativo, Toast.LENGTH_LONG).show();
@@ -368,7 +343,6 @@ public class Activity_Quizz extends AppCompatActivity {
                 GoToresultNo.putExtra("Age", userAge.getText().toString());
 
                 startActivity(GoToresultNo);
-
 
             } else {
 
@@ -387,10 +361,9 @@ public class Activity_Quizz extends AppCompatActivity {
 
             }
 
-
         } else {
 
-        Toast.makeText(this,getString(R.string.text_not_all_checked), Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getString(R.string.text_not_all_checked), Toast.LENGTH_LONG).show();
 
         }
 
@@ -406,14 +379,12 @@ public class Activity_Quizz extends AppCompatActivity {
 
     }
 
-
-
-    public class Test{
+    public class Test {
 
         //** Check if all the questions have been replied **//
         private boolean pregunta1, pregunta2, pregunta3, pregunta4, pregunta5, pregunta6, pregunta7, pregunta8, pregunta9, pregunta10;
 
-        public Test(){
+        public Test() {
             pregunta1 = false;
             pregunta2 = false;
             pregunta3 = false;
@@ -426,49 +397,49 @@ public class Activity_Quizz extends AppCompatActivity {
             pregunta10 = false;
         }
 
-        public void setPregunta1(boolean contestada){
+        public void setPregunta1(boolean contestada) {
             pregunta1 = contestada;
         }
 
-        public void setPregunta2(boolean contestada){
+        public void setPregunta2(boolean contestada) {
             pregunta2 = contestada;
         }
 
-        public void setPregunta3(boolean contestada){
+        public void setPregunta3(boolean contestada) {
             pregunta3 = contestada;
         }
 
-        public void setPregunta4(boolean contestada){
+        public void setPregunta4(boolean contestada) {
             pregunta4 = contestada;
         }
 
-        public void setPregunta5(boolean contestada){
+        public void setPregunta5(boolean contestada) {
             pregunta5 = contestada;
         }
 
-        public void setPregunta6(boolean contestada){
+        public void setPregunta6(boolean contestada) {
             pregunta6 = contestada;
         }
 
-        public void setPregunta7(boolean contestada){
+        public void setPregunta7(boolean contestada) {
             pregunta7 = contestada;
         }
 
-        public void setPregunta8(boolean contestada){
+        public void setPregunta8(boolean contestada) {
             pregunta8 = contestada;
         }
 
-        public void setPregunta9(boolean contestada){
+        public void setPregunta9(boolean contestada) {
             pregunta9 = contestada;
         }
 
-        public void setPregunta10(boolean contestada){
+        public void setPregunta10(boolean contestada) {
             pregunta10 = contestada;
         }
 
-        public boolean todasContestadas(){
+        public boolean todasContestadas() {
             boolean todasLasPreguntasContestadas = false;
-            if(pregunta1 && pregunta2 && pregunta3 && pregunta4 && pregunta5 && pregunta6 && pregunta7 && pregunta8 && pregunta9 && pregunta10){
+            if (pregunta1 && pregunta2 && pregunta3 && pregunta4 && pregunta5 && pregunta6 && pregunta7 && pregunta8 && pregunta9 && pregunta10) {
                 todasLasPreguntasContestadas = true;
             } else {
                 todasLasPreguntasContestadas = false;
@@ -477,7 +448,6 @@ public class Activity_Quizz extends AppCompatActivity {
         }
 
     }
-
 
 }
 

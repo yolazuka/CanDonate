@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,109 +10,102 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/chicos_sonrientes"
-        android:background="@android:color/white"
-        android:layout_width="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_height="170dp"
-        android:src="@drawable/chicos_sonrientes"
-        />
+        <ImageView
+            android:id="@+id/chicos_sonrientes"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_alignParentLeft="true"
+            android:background="@android:color/white"
+            android:src="@drawable/chicos_sonrientes" />
 
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_marginTop="@dimen/small"
-        android:layout_width="140dp"
-        android:layout_height="140dp"
-        android:src="@drawable/candonate_logo"
-        android:layout_alignParentTop="true"
-        android:layout_alignRight="@id/chicos_sonrientes"/>
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@id/chicos_sonrientes"
+            android:layout_marginTop="@dimen/small"
+            android:src="@drawable/candonate_logo" />
 
-    <View
-        android:id="@+id/linea"
-        android:layout_below="@id/chicos_sonrientes"
-        android:layout_width="fill_parent"
-        android:layout_height="1dp"
-        android:background="@color/medium_brown"/>
+        <View
+            android:id="@+id/linea"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/chicos_sonrientes"
+            android:background="@color/medium_brown" />
 
         <TextView
             android:id="@+id/text_congrat"
-            android:elevation="3dp"
-            android:layout_below="@id/chicos_sonrientes"
-            android:textColor="@color/brown_chocolate"
-            android:textStyle="bold"
-            android:textSize="18sp"
-            android:gravity="center_horizontal"
-            android:layout_marginTop="25dp"
-            android:layout_marginLeft="@dimen/margin_standard_left"
-            android:layout_marginRight="@dimen/margin_standard_right"
-            android:layout_marginBottom="@dimen/medium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/text_congrat" />
+            android:layout_below="@id/chicos_sonrientes"
+            android:layout_marginBottom="@dimen/medium"
+            android:layout_marginLeft="@dimen/margin_standard_left"
+            android:layout_marginRight="@dimen/margin_standard_right"
+            android:layout_marginTop="25dp"
+            android:elevation="3dp"
+            android:gravity="center_horizontal"
+            android:text="@string/text_congrat"
+            android:textColor="@color/brown_chocolate"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/main_text_congrat"
-        android:layout_below="@id/text_congrat"
-        android:text="@string/main_text_congrat"
-        android:layout_marginLeft="@dimen/margin_standard_left"
-        android:layout_marginRight="@dimen/margin_standard_right"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-
-    <Button
-        android:id="@+id/button_to_find_centers"
-        style="@style/button"
-        android:onClick="buttonToFindCenters"
-        android:elevation="5dp"
-        android:layout_marginLeft="@dimen/large"
-        android:text="@string/button_to_find_centers"
-        android:layout_width="140dp"
-        android:layout_height="50dp"
-        android:background="@drawable/button"
-        android:layout_below="@id/main_text_congrat"
-        android:layout_marginTop="@dimen/large" />
-
-    <TextView
-        android:id="@+id/testresume"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <Button
-        style="@style/button"
-        android:onClick="send_results_mail"
-        android:layout_below="@id/main_text_congrat"
-        android:layout_alignParentRight="true"
-        android:elevation="5dp"
-        android:id="@+id/button_send_results"
-        android:text="@string/send_results_mail"
-        android:background="@drawable/button"
-        android:layout_marginRight="@dimen/large"
-        android:layout_width="140dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="@dimen/large"
-        android:layout_marginBottom="80dp"/>
-
-
-
-
+        <TextView
+            android:id="@+id/main_text_congrat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_congrat"
+            android:layout_marginLeft="@dimen/margin_standard_left"
+            android:layout_marginRight="@dimen/margin_standard_right"
+            android:text="@string/main_text_congrat" />
 
         <Button
-            android:text="@string/repeat_test"
-            android:onClick="buttonToBackToQuizz"
-            android:textSize="12sp"
+            android:id="@+id/button_to_find_centers"
             style="@style/button"
-            android:layout_toLeftOf="@id/button_check_results"
-            android:paddingTop="5dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="0dp"
-            android:paddingBottom="5dp"
-            android:background="@drawable/button_gota"
-            android:id="@+id/button_back_to_quizz"
+            android:layout_width="140dp"
             android:layout_height="50dp"
-            android:layout_width="55dp" />
+            android:layout_below="@id/main_text_congrat"
+            android:layout_marginLeft="@dimen/large"
+            android:layout_marginTop="@dimen/large"
+            android:background="@drawable/button"
+            android:elevation="5dp"
+            android:onClick="buttonToFindCenters"
+            android:text="@string/button_to_find_centers" />
 
+        <TextView
+            android:id="@+id/testresume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/button_send_results"
+            style="@style/button"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/main_text_congrat"
+            android:layout_marginBottom="80dp"
+            android:layout_marginRight="@dimen/large"
+            android:layout_marginTop="@dimen/large"
+            android:background="@drawable/button"
+            android:elevation="5dp"
+            android:onClick="send_results_mail"
+            android:text="@string/send_results_mail" />
+
+        <Button
+            android:id="@+id/button_back_to_quizz"
+            style="@style/button"
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@id/button_check_results"
+            android:background="@drawable/button_gota"
+            android:onClick="buttonToBackToQuizz"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/repeat_test"
+            android:textSize="12sp" />
 
     </RelativeLayout>
 

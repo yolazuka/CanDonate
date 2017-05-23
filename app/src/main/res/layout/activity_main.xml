@@ -4,85 +4,80 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:layout_marginBottom="0dp"
+    android:orientation="vertical"
     tools:context="MainActivity">
-
 
     <ImageView
         android:id="@+id/imagen_chica"
         android:layout_width="match_parent"
-        android:background="@android:color/white"
         android:layout_height="170dp"
-        android:src="@drawable/chica_pensativa"
-        />
+        android:background="@android:color/white"
+        android:src="@drawable/chica_pensativa" />
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_marginTop="8dp"
         android:layout_width="140dp"
         android:layout_height="140dp"
-        android:src="@drawable/candonate_logo"
         android:layout_alignParentTop="true"
-        android:layout_alignRight="@id/imagen_chica"/>
+        android:layout_alignRight="@id/imagen_chica"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/candonate_logo" />
 
     <View
         android:id="@+id/linea"
-        android:layout_below="@id/imagen_chica"
         android:layout_width="fill_parent"
         android:layout_height="1dp"
-        android:background="#80795548"/>
-
+        android:layout_below="@id/imagen_chica"
+        android:background="#80795548" />
 
     <ScrollView
         android:id="@+id/main_scroll"
-        android:layout_below="@id/imagen_chica"
-        android:paddingTop="30dp"
-        android:paddingBottom="10dp"
         android:layout_width="475dp"
-        android:layout_height="270dp">
-
-    <TextView
-        android:elevation="3dp"
-        android:id="@+id/texto_intro"
-        android:layout_marginTop="@dimen/margin_standard_top"
-        android:layout_marginLeft="@dimen/margin_standard_left"
-        android:layout_marginRight="@dimen/margin_standard_right"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="270dp"
         android:layout_below="@id/imagen_chica"
-        android:text="@string/texto_intro" />
+        android:paddingBottom="10dp"
+        android:paddingTop="30dp">
+
+        <TextView
+            android:id="@+id/texto_intro"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/imagen_chica"
+            android:layout_marginLeft="@dimen/margin_standard_left"
+            android:layout_marginRight="@dimen/margin_standard_right"
+            android:layout_marginTop="@dimen/margin_standard_top"
+            android:elevation="3dp"
+            android:text="@string/texto_intro" />
+
     </ScrollView>
 
-
     <Button
-        style="@style/button"
-        android:onClick="buttonToQuizz"
-        android:elevation="5dp"
         android:id="@+id/button_go_test"
-        android:text="@string/button_go"
+        style="@style/button"
         android:layout_width="180dp"
         android:layout_height="50dp"
-        android:background="@drawable/button"
         android:layout_below="@id/main_scroll"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/medium"
-        android:layout_centerHorizontal="true" />
+        android:background="@drawable/button"
+        android:elevation="5dp"
+        android:onClick="buttonToQuizz"
+        android:text="@string/button_go" />
 
     <TextView
         android:id="@+id/text_botton"
-        android:layout_below="@id/button_go_test"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/button_go_test"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
         android:layout_marginLeft="@dimen/margin_standard_left"
         android:layout_marginRight="@dimen/margin_standard_right"
         android:layout_marginTop="@dimen/medium"
-        android:layout_marginBottom="0dp"
         android:gravity="center_horizontal"
-        android:layout_centerHorizontal="true"
-        android:textStyle="italic"
+        android:text="@string/note_below"
         android:textSize="12dp"
-        android:text="@string/note_below"/>
-
-
+        android:textStyle="italic" />
 
 </RelativeLayout>

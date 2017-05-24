@@ -69,7 +69,6 @@
             android:layout_marginBottom="30dp"
             android:layout_marginTop="23dp"
             android:background="@drawable/button"
-            android:elevation="5dp"
             android:onClick="send_results_mail"
             android:text="@string/send_results_mail" />
 
